@@ -7,65 +7,107 @@
     <link rel="stylesheet" href="mediaqueries.css">
     <title>My Potrtfolio</title>
 </head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Michael Obidos</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </div>
-    </nav>
-	<nav id="hamburger-nav">
-		<div class="logo">Michael Obidos</div>
-		<div class="hamburger-menu">
-			<div class="hamburger-icon" onclick="toggleMenu()">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="menu-links">
-				<li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
-			</div>
-		</div>
-	</nav>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Michael Obidos</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Michael Obidos</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+                </div>
+            </div>
+        </nav>
+        <!--PROFILE SECTION-->
 
-    <!--PROFILE SECTION-->
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/michael.png" alt="Michael Obidos profile picture">   
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">
+                    Hello I'm
+                </p>
+                <h1 class="title">
+                    Michael Obidos
+                </h1>
+                <p class="section__text__p2">
+                    Backend Developer
+                </p>
+                <div class="btn-container">
+                    <button class="btn btn-color2" onclick="window.open('./assets/Curriculum-Vitae.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
+                    <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Kael1817'">
+                </div>
+            </div>
+        </section>
 
-    <section id="profile">
+        <!-- ABOUT SECTION -->
+
+<section id="about">
+    <p class="section__text__p1">Get to Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
+        <!-- Profile Picture Section -->
         <div class="section__pic-container">
-            <img src="./assets/michael.png" alt="Michael Obidos profile picture">   
+            <img src="./assets/about-michael.jpg" alt="Profile picture" class="about-pic">
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">
-                Hello I'm
-            </p>
-            <h1 class="title">
-                Michael Obidos
-            </h1>
-            <p class="section__text__p2">
-                Backend Developer
-            </p>
-            <div class="btn-container">
-                <button class="btn btn-color2" onclick="window.open('./assets/Curriculum-Vitae.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
+
+        <!-- About Details Section -->
+        <div class="about-details-container">
+            <div class="about-containers">
+                <!-- Experience and Education Section -->
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p>6 months <br>Backend Development</p>
+                </div>
+
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon" class="icon">
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Information Technology</p>
+                </div>
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
-                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Kael1817'">
+
+            <!-- Text Description Section -->
+            <div class="text-container">
+                <p>
+                    I am a second-year Bachelor of Science in Information Technology student with a passion for programming, personal development, and technology. I enjoy reading, researching, and working with computers, which fuels my drive for continuous learning and growth. Motivated by my goals and inspired by my role models, I aim to develop high-paying skills, achieve a good work-life balance, and travel the world. Known for being funny, observant, and easy to get along with, I bring a positive and adaptable attitude to any environment, and I’m eager to build my technical expertise and pursue opportunities for personal and professional growth.
+                </p>
             </div>
         </div>
-    </section>
-    <script src="script.js"></script>
-</body>
+    </div>
+
+    <!-- Arrow to experience section -->
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+</section>
+
+        <script src="script.js"></script>
+    </body>
 </html>
